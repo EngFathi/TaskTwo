@@ -61,29 +61,25 @@
         }
 
         document.getElementById('forward').addEventListener('click', function() {
-            console.log('Moving forward');
             submitButtonClick('forward');
         });
         
         document.getElementById('backward').addEventListener('click', function() {
-            console.log('Moving backward');
             submitButtonClick('backward');
         });
 
         document.getElementById('left').addEventListener('click', function() {
-            console.log('Turning left');
             submitButtonClick('left');
         });
 
         document.getElementById('right').addEventListener('click', function() {
-            console.log('Turning right');
             submitButtonClick('right');
         });
 
         document.getElementById('stop').addEventListener('click', function() {
-            console.log('Stopping');
             submitButtonClick('stop');
         });
     </script>
+    <a href="display_button.php">View Last Button Clicked</a>
 </body>
 </html>

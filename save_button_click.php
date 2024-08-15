@@ -20,7 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("s", $buttonName);
 
         if ($stmt->execute()) {
-            echo "New record created successfully";
+            header("Location: 1stTask.html"); // Redirect back to 1stTask.html
+            exit();
         } else {
             echo "Error: " . $stmt->error;
         }
